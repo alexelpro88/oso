@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oso</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            text-transform: capitalize;
+            margin-top: 100px; /* Añadir espacio entre el oso y el nombre */
+        }
+
+        .oso {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            background-color: rgb(225, 120, 55);
+            border-radius: 50%;
+            top: 60px; /* Mover el cuerpo hacia abajo */
+        }
+
+        .cabeza {
+            position: absolute;
+            top: -150px; /* Aumentar la distancia de separación */
+            left: 30px;
+            width: 140px;
+            height: 140px;
+            background-color: rgb(225, 120, 55);
+            border-radius: 50%;
+        }
+
+        .oreja {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(225, 120, 55);
+            border-radius: 50%;
+        }
+
+        .oreja.left {
+            top: -35px;
+            left: 0;
+        }
+
+        .oreja.right {
+            top: -35px;
+            right: 0;
+        }
+
+        .ojo {
+            position: absolute;
+            width: 25px; /* Hacer los ojos un poco más grandes */
+            height: 25px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .ojo.left {
+            top: 40px;
+            left: 35px;
+        }
+
+        .ojo.right {
+            top: 40px;
+            right: 35px;
+        }
+
+        .pupila {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: black;
+            border-radius: 50%;
+            top: 5px;
+            left: 5px;
+        }
+
+        .nariz {
+            position: absolute;
+            top: 70px;
+            left: 60px;
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .boca {
+            position: absolute;
+            top: 100px;
+            left: 40px;
+            width: 60px;
+            height: 30px;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .panza {
+            position: absolute;
+            top: 80px;
+            left: 50px;
+            width: 100px;
+            height: 160px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .brazo {
+            position: absolute;
+            width: 50px;
+            height: 20px;
+            background-color: rgb(225, 120, 55);
+            border-radius: 50%;
+        }
+
+        .brazo.left {
+            top: 120px;
+            left: -40px;
+        }
+
+        .brazo.right {
+            top: 120px;
+            right: -40px;
+        }
+
+        .pierna {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(225, 120, 55);
+            border-radius: 50%;
+        }
+
+        .pierna.left {
+            bottom: -40px;
+            left: 20px;
+        }
+
+        .pierna.right {
+            bottom: -40px;
+            right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="oso">
+        <div class="cabeza">
+            <div class="oreja left"></div>
+            <div class="oreja right"></div>
+            <div class="ojo left">
+                <div class="pupila"></div>
+            </div>
+            <div class="ojo right">
+                <div class="pupila"></div>
+            </div>
+            <div class="nariz"></div>
+            <div class="boca"></div>
+        </div>
+        <div class="panza">
+            <div class="media-luna left"></div>
+            <div class="media-luna right"></div>
+        </div>
+        <div class="brazo left"></div>
+        <div class="brazo right"></div>
+        <div class="pierna left"></div>
+        <div class="pierna right"></div>
+    </div>
+    
+    <h1>Alan Yupanqui</h1> <!-- Mover el nombre aquí, debajo del oso -->
+</body>
+</html>
